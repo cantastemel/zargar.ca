@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:400,300,500,600");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css");
+$bodyFont: Hind,
+'Helvetica Neue',
+Helvetica,
+Arial sans-serif;
+body {
+    font-family: $bodyFont;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: $body_copy;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 27px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $bodyFont;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    @include mobile {}
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: $darkbrown;
+    @include mobile {}
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+    @include mobile {}
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+    @include mobile {}
+}
+
+.title-helper{
+	font-size: 14px;
+	color: $darkbrown;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+.large-text{
+	font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: $body_copy;
+    @include transition-property(all);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-in);
+    @include transition-delay(0);
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+section p a{
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    @include transition-property(all);
+    @include transition-duration(0.3s);
+    @include transition-timing-function(ease-in);
+    @include transition-delay(0);
+    font-size: 16px;
+    font-weight: 500;
+    color: $darkbrown;
+    border: 1px solid $darkbrown;
+    &:hover {
+        color: $white;
+        background-color: $darkbrown;
+        opacity: 1;
+    }
+}
+
+strong {
+    font-weight: bold;
+}
